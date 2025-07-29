@@ -13,7 +13,7 @@ const id = Symbol('123')
 const anotherID = Symbol('123')
 
 console.log(id === anotherID);
-const bigNumber = 2146874247e 264894624n;
+const bigNumber = 214687424764894624;
 console.log(bigNumber);
 
 
@@ -44,3 +44,29 @@ console.log(typeof scoreValue);
 // Object(Native and does not implement[[call]]) = object
 // Object (native or host and does not implement [[call]]) = function
 // object(host and does not implement[[call]]) = Implementation-defined except may not "undefined", "Boolean", "Number", or "String".
+
+
+// -----------------------------------------------------------------------------------------------
+
+// Stack (Primitive),Heap (Non Primitie)
+
+let myYTname = "Gaganyoutube"
+
+let anotherName = myYTname
+anotherName = "the_vestir"
+
+console.log(myYTname);
+console.log(anotherName);
+
+let userOne = {
+    email: "one@gmail.com",
+    upi: "one@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.upi = "123@ybl"
+
+console.log(userOne.upi);
+console.log(userTwo.upi);
+
